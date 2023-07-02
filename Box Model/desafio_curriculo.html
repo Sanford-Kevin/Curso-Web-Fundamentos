@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Curriculum</title>
     <meta name="author" content="Kevin Arthur">
     <meta name="description" content="Curriculum">
     <meta name="keywords" content="HTML5, CSS3">
-    
+
     <style>
         #background {
             background-color: rgb(13, 11, 11);
         }
 
-        .cabecalho{
+        .cabecalho {
             padding: 10px;
-            font-size:50px;
+            font-size: 50px;
             text-align: left;
-            border-bottom: 10px inset gold; 
+            border-bottom: 10px inset gold;
             margin: auto;
             width: 270px;
         }
 
-        .titulo{
+        .titulo {
             padding: 10px;
-            border-bottom: 5px inset red; 
+            border-bottom: 5px inset red;
             margin-left: 10px;
             margin-right: 10px;
         }
-        
+
         body {
             font-family: sans-serif;
         }
@@ -41,14 +42,18 @@
 
         h2 {
             color: white;
-            font-weight:500 ;
-            background-color: orange;
-            margin-left:20px;
+            font-weight: 500;
+           
+            margin-left: 20px;
             margin-top: 50px;
-            width: 300px; 
+            width: 300px;
             text-align: left;
             padding: 5px;
-            border-bottom: 2px inset blue; 
+            border-bottom: 2px inset blue;
+        }
+
+        h2:not(.bottom) {
+            background-color: orange;
         }
 
         h3 {
@@ -57,62 +62,112 @@
             margin-right: 30px;
         }
 
-        p {
+        p, .UL {
             margin-left: 40px;
             margin-right: 40px;
             font-size: 20px;
-            background-color:azure;
-            box-sizing:content-box;
+            background-color: azure;
+            box-sizing: content-box;
             list-style-position: inside;
-            border-bottom: 2px inset rgb(4, 6, 54); 
+            border-bottom: 2px inset rgb(4, 6, 54);
         }
 
-        a:hover{
-            background-color: white ;
-            display:run-in;
+        .bottom{
+            
+            padding: 0px;
+            border-bottom: none;
+            text-align: left;
         }
-        </style>
+
+        .bottom a{
+            color: black;
+            background-color: orange;
+            padding: 16px;
+            display: inline-block;
+        }
+
+        .bottom a:hover{
+            background-color: greenyellow;
+        }
+        
+        .menu{
+            
+            padding-right: 20px;
+            border-bottom: none;
+            text-align: right;
+        }
+
+        .menu li{
+            
+            list-style-type: none;
+            display: inline-block;
+            padding: 0;
+        }
+
+        .menu a{
+            background-color: gold;
+            color: black;
+            background-color: silver;
+            padding: 16px;
+            display: inline-block;
+        }
+
+        .menu a:hover{
+            background-color: gold;
+        }
+    </style>
 </head>
+
 <body>
-    <h1 class="cabecalho" id="background" >Curriculum</h1>
+    <h1 class="cabecalho" id="background">Curriculum</h1>
 
     <h1 id="background" class="titulo">Kevin Arthur</h1>
-        <p>Brasileiro, solteiro, 24 anos.</p>
+    <p>Brasileiro, solteiro, 24 anos.</p>
+
+    <ul class="menu">
+        <li><a href="#">Linkedin</a></li>
+        <li><a href="#">Github</a></li>
+        <li><a href="#">Youtube</a></li>
+    </ul>
 
     <h1 id="background" class="titulo">Objetivo</h1>
-        <p>Me tornar front-end developer com conhecimento em React, PHP e C#</p>
+    <p>Me tornar front-end developer com conhecimento em React, PHP e C#</p>
 
     <h1 id="background" class="titulo">Experiência Profissional</h1>
-        
-        <h2> <a href="https://www.instagram.com/thikkis/" target="_blank">Thikkis</a></h2>
-            <h3>Gerente/Diretor<strong style="color: black;">- 2 anos</strong></h3>
-                <p>Fundei e dirigi em sociedade, uma distribuidora de produtos para tabacaria e Headshop.<strong> - 2 ANOS</strong></p>
-        
-        <h2> <a href="http://www.twsbrasil.com/" target="_blank">TWS Maritime Service</a></h2>
-            <h3>Marine Surveyor <strong style="color: black;">- 7 meses</strong></h3>
-                <p>Trabalhei fazendo serviços em operações marítimas, como: </p>
-                    <ul>
-                    <li>Bunker Survey</li>
-                    <li>Draft Survey</li>
-                    <li>Port Capitain</li>
-                    <li>Cargo Surveyor</li>
-                    </ul> 
+
+    <h2 class="bottom"> <a href="https://www.instagram.com/thikkis/" target="_blank">Thikkis</a></h2>
+    <h3>Gerente/Diretor<strong style="color: black;">- 2 anos</strong></h3>
+    <p>Fundei e dirigi em sociedade, uma distribuidora de produtos para tabacaria e Headshop.<strong> - 2 ANOS</strong>
+    </p>
+
+    <h2 class="bottom"> <a href="http://www.twsbrasil.com/" target="_blank">TWS Maritime Service</a></h2>
+    <h3>Marine Surveyor <strong style="color: black;">- 7 meses</strong></h3>
+    <p>Trabalhei fazendo serviços em operações marítimas, como: </p>
+    <ul class="UL">
+        <li>Bunker Survey</li>
+        <li>Draft Survey</li>
+        <li>Port Capitain</li>
+        <li>Cargo Surveyor</li>
+    </ul>
 
 
     <h1 id="background" class="titulo">Formação</h1>
-        <h3 style=" background-color:azure;
-        box-sizing:content-box;">Colegio 7 de setembro <strong style="color: black;">- Ensino médio - CONCLUÍDO</strong> </h3>
+    <h3 style=" background-color:azure;
+        box-sizing:content-box;">Colegio 7 de setembro <strong style="color: black;">- Ensino médio -
+            CONCLUÍDO</strong> </h3>
 
     <h1 id="background" class="titulo">Cursos / Especializações</h1>
-        <h2>Draft Survey - Consulport</h2>
-            <p>Aprendizado sobre noções nauticas com foco na realização de draft survey. <strong>- CONCLUÍDO</strong>.
-            </p>
-        
-        <h2>Algoritimos e lógica de programação - Cod3r </h2>
-                <p>Aprendizado do zero, relacionado a lógica de programação, utilizando Java Script. <strong>- CONCLUÍDO</strong> </p>
-        
-        <h2>Curso Web Design Completo: HTML5, CSS3 e JS + Projetos</h2>
-                <p>Aprendizado relacionado à HTML, CSS e JS, <strong>- EM ANDAMENTO</strong></p>
-        
+    <h2>Draft Survey - Consulport</h2>
+    <p>Aprendizado sobre noções nauticas com foco na realização de draft survey. <strong>- CONCLUÍDO</strong>.
+    </p>
+
+    <h2>Algoritimos e lógica de programação - Cod3r </h2>
+    <p>Aprendizado do zero, relacionado a lógica de programação, utilizando Java Script. <strong>- CONCLUÍDO</strong>
+    </p>
+
+    <h2>Curso Web Design Completo: HTML5, CSS3 e JS + Projetos</h2>
+    <p>Aprendizado relacionado à HTML, CSS e JS, <strong>- EM ANDAMENTO</strong></p>
+
 </body>
+
 </html>
