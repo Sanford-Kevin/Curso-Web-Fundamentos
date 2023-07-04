@@ -35,8 +35,33 @@ header p{
     transform: translate(-50%, -50%);
 }
 
+header ul {
+    position: absolute;
+    top: 5%;
+    left: 80%;
+    transform: translate(-0%, -0%);
+}
+
+header li {
+    display: inline;
+    background-color: rgba(0, 0, 0, 0.285);
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgb(238, 238, 238);
+    list-style-type: none;
+    display: inline-block;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    background-color: black;
+}
+
 article {
-    background-color: brown;
     margin: 5%;
     padding: 0px;
     border: 10px solid white;
@@ -57,7 +82,7 @@ article{
     background-color: white;
 }
 
-a{
+article a{
     background-color: rgb(180, 178, 178);
     padding: 10px;
     margin: 10px;
@@ -67,6 +92,15 @@ a{
     border-radius:7px;
 }
 
-a:hover{
+article a:hover{
     background-color: red;
+    
+}
+
+.copy {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.415);
+    padding: 25px ;
+    text-align: center;
+
 }
