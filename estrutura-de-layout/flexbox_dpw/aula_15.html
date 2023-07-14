@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Flexbox DPW</title>
+
+    <style>
+        html {
+            background-color: rgba(252, 74, 26, .85);
+        }
+
+        .container>* {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgba(255, 255, 255, .25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .container>*:hover {
+            background-color: rgba(255, 255, 255, .4);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            /* align-items: center;
+            outline: 1px solid white; */
+        }
+
+        .card {
+            width: 250px;
+            padding: 0;
+            text-align: left;
+        }
+
+        .card__content{
+            padding: 0 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <article class="card">
+            <img src="http://via.placeholder.com/250x450">
+
+            <div class="card__content">
+                <h1>Lorem, ipsum dolor.</h1>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sequi consequuntur natus at. Soluta
+                    saepe ullam perspiciatis est, quis asperiores harum commodi, ad optio illum repudiandae itaque, vel
+                    molestiae nostrum.</p>
+
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="http://via.placeholder.com/250x550">
+
+            <div class="card__content">
+                <h1>Lorem, ipsum dolor.</h1>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sequi consequuntur natus at. Soluta
+                    saepe ullam perspiciatis est, quis asperiores harum commodi, ad optio illum repudiandae itaque, vel
+                    molestiae nostrum.</p>
+
+            </div>
+        </article>
+
+        <article class="card">
+            <img src="http://via.placeholder.com/250x250">
+
+            <div class="card__content">
+                <h1>Lorem, ipsum dolor.</h1>
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores sequi consequuntur natus at. Soluta
+                    saepe ullam perspiciatis est, quis asperiores harum commodi, ad optio illum repudiandae itaque, vel
+                    molestiae nostrum.</p>
+
+            </div>
+        </article>
+    </div>
+</body>
+
+</html>

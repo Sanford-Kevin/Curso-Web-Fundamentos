@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Flexbox DPW</title>
+
+    <style>
+        html {
+            background-color: rgba(252, 74, 26, .85);
+        }
+
+        .container>* {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgba(255, 255, 255, .25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .container>*:hover {
+            background-color: rgba(255, 255, 255, .4);
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            width: 100vw;
+        }
+
+        .box {
+            width: 200px;
+            height: 500px;
+            display: flex;
+        }
+
+        .box--lvl2 {
+            width: 100px;
+            height: 100px;
+            display: block;
+            background-color: rebeccapurple;
+        }
+
+        .flex-total-centered {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container flex-total-centered">
+        <div class="box flex-total-centered">
+            <div>
+                <div class="box--lvl2"></div>
+            </div>
+    </div>
+</body>
+
+</html>
