@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Flexbox DPW</title>
+
+    <style>
+        html {
+            background-color: rgba(252, 74, 26, .85);
+        }
+
+        .container>* {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgba(255, 255, 255, .25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .container>*:hover {
+            background-color: rgba(255, 255, 255, .4);
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        .accordion{
+            margin: 0;
+            padding: 0;
+            flex: 1;
+            background-repeat: no-repeat;
+            background-position:center ;
+            background-size: cover;
+            transition: all 600ms cubic-bezier(0.075, 0.82, 0.165, 1) ;
+        }
+
+        .accordion:hover{
+            flex-basis: 65vw;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="accordion"
+            style="background-image: url(https://cdn.britannica.com/49/182849-050-4C7FE34F/scene-Iron-Man.jpg);"> </div>
+        <div class="accordion"
+            style="background-image: url(https://proxy.olhardigital.com.br/wp-content/uploads/2022/06/thor-hemsworth-1024x576.jpg);">
+        </div>
+        <div class="accordion"
+            style="background-image: url(https://criticalhits.com.br/wp-content/webp-express/webp-images/doc-root/wp-content/uploads/2020/09/sabe-tudo-sobre-capitao-america-768x480.jpg.webp);">
+        </div>
+        <div class="accordion"
+            style="background-image: url(https://static1.purebreak.com.br/articles/4/34/19/4/@/168681-um-filme-solo-da-viuva-negra-estaria-na-950x0-2.jpg);">
+        </div>
+        <div class="accordion"
+            style="background-image: url(https://insidethemagic.net/wp-content/uploads/2019/04/resizer.php_-800x400.jpeg);">
+        </div>
+        <div class="accordion"
+            style="background-image: url(https://br.web.img3.acsta.net/r_654_368/newsv7/19/04/10/20/12/0903029.jpg);">
+        </div>
+    </div>
+</body>
+
+</html>

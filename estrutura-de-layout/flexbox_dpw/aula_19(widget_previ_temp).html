@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo Flexbox DPW</title>
+
+    <style>
+        html {
+            background-color: rgba(252, 74, 26, .85);
+        }
+
+        .container>* {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgba(255, 255, 255, .25);
+            border-radius: 3px;
+            border: 1px solid #fff;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: all 150ms ease;
+        }
+
+        .container>*:hover {
+            background-color: rgba(255, 255, 255, .4);
+        }
+
+        .weather {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between
+        }
+
+        .weather>div {
+            margin: 10px 0;
+        }
+
+        .weather__period {
+            flex: 1;
+            font-size: 2rem;
+            text-align: left;
+        }
+
+        .weather__icon {
+            height: 50px;
+            min-width: 50px;
+            width: 50px;
+        }
+
+        .weather__min {
+            font-weight: 700;
+        }
+
+        @media (min-width: 37.5em) {
+
+            /* 600px */
+            .weather {
+                align-items: center;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .weather>div {
+                margin: 0 50px;
+            }
+
+            .weather__period {
+                font-size: 1.5rem;
+                min-width: 50px;
+                text-align: left;
+            }
+
+            .weather__minmax {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .weather__min::after {
+                content: ' - ';
+            }
+
+        }
+
+        @media (min-width: 56.25em) {
+
+            /* 900px */
+            .container {
+                display: flex;
+                justify-content: center;
+            }
+
+            .weather {
+                flex-basis: 100px;
+                flex-direction: column;
+            }
+
+            .weather > div {
+                margin: 10px 0;
+            }
+
+            .weather__period{
+                flex-basis: 100px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="weather">
+            <div class="weather__period">Manhã</div>
+            <div class="weather__icon">
+                <img src="https://pic.onlinewebfonts.com/thumbnails/icons_498862.svg">
+            </div>
+            <div class="weather__minmax">
+                <span class="weather__min">16&deg;</span>
+                <span class="weather__max">25&deg;</span>
+            </div>
+            <div class="weather__hr">HR 85%</div>
+
+        </div>
+
+        <div class="weather">
+            <div class="weather__period">Tarde</div>
+            <div class="weather__icon">
+                <img src="https://pic.onlinewebfonts.com/thumbnails/icons_541744.svg">
+            </div>
+            <div class="weather__minmax">
+                <span class="weather__min">19&deg;</span>
+                <span class="weather__max">26&deg;</span>
+            </div>
+            <div class="weather__hr">HR 50%</div>
+        </div>
+
+        <div class="weather">
+            <div class="weather__period">Noite</div>
+            <div class="weather__icon">
+                <img src="https://pic.onlinewebfonts.com/thumbnails/icons_218251.svg">
+            </div>
+            <div class="weather__minmax">
+                <span class="weather__min">18&deg;</span>
+                <span class="weather__max">25&deg;</span>
+            </div>
+            <div class="weather__hr">HR 60%</div>
+        </div>
+
+        <div class="weather">
+            <div class="weather__period">Madrugada </div>
+            <div class="weather__icon">
+                <img src="https://pic.onlinewebfonts.com/thumbnails/icons_218251.svg">
+            </div>
+            <div class="weather__minmax">
+                <span class="weather__min">18&deg;</span>
+                <span class="weather__max">26&deg;</span>
+            </div>
+            <div class="weather__hr">HR 55%</div>
+        </div>
+
+    </div>
+</body>
+
+</html>/
